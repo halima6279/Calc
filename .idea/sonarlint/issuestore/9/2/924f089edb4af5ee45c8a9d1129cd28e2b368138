@@ -1,0 +1,10 @@
+
+˜	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8ÍÆşè2J$43df7984-643e-4918-9263-745336af8d88
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(³áşóüÿÿÿÿ8ÚÆşè2J$0d9ccb68-1909-40da-afee-2f9906f69b30
+©
+java:S1488*"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8âÆşè2J$be02a96d-401b-42d4-afa9-6f5328531af1
+m	java:S106"+Replace this use of System.out by a logger.(Ë8áÇşè2J$7ba58c03-296a-43b4-a03b-a49ada7b03ca
+r	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8ğÇşè2J$45abdc75-ca83-4788-8520-aa8f05d47a8c
+k
+java:S1659."#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8èÈşè2J$64354436-0b7c-4ebe-bbae-ef1f0da6dc14
