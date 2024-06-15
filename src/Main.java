@@ -3,16 +3,16 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    private static final Map<Character, Integer> MyMap = new HashMap<Character, Integer>();
+    private static final Map<Character, Integer> numeralsMap = new HashMap<Character, Integer>();
     static {
-        MyMap.put('I', 1);
-        MyMap.put('V', 5);
-        MyMap.put('X', 10);
+        numeralsMap.put('I', 1);
+        numeralsMap.put('V', 5);
+        numeralsMap.put('X', 10);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите выражение (через пробел): ");
+        System.out.println("Введите выражение через пробел (оба операнда от 1 до 10): ");
         String input = scanner.nextLine().trim();
         System.out.println (calc(input));
     }
@@ -20,7 +20,7 @@ public class Main {
 
         String [] elements = input.split(" ");
         if (elements.length != 3) {
-            throw new IllegalArgumentException("Ошибка: вы неправильно ввели значения");
+            throw new IllegalArgumentException("Ошибка! Выражение не соответветсвует условию");
         }
 
         String firstOperand = elements[0];
@@ -28,14 +28,14 @@ public class Main {
         String secondOperand = elements[2];
 
         if ((!isRoman(firstOperand) && !isArab(firstOperand)) || (!isRoman(secondOperand) && !isArab(secondOperand))) {
-            throw new ArithmeticException("Ошибка: нужно ввести числа от 1 до 10");
+            throw new ArithmeticException("Ошибка! Числа должны быть римские или арабскими в диапазоне 1-10");
         }
 
         int num1 = isRoman(firstOperand) ? toArab(firstOperand) : Integer.parseInt(firstOperand);
         int num2 = isRoman(secondOperand) ? toArab(secondOperand) : Integer.parseInt(secondOperand);
 
         if ((!isRoman(firstOperand) && isRoman(secondOperand)) || (isRoman(firstOperand) && !isRoman(secondOperand))) {
-            throw new IllegalArgumentException("Ошибка: оба числа должны быть либо арабскими, либо римскими!");
+            throw new IllegalArgumentException("Ошибка! Оба числа должны быть либо арабскими, либо римскими");
         }
 
         int result = performOperation(num1, num2, String.valueOf(operator));
@@ -45,7 +45,7 @@ public class Main {
     private static int toArab(String str) {
         int result = 0, Value = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
-            int arabEquivalent = MyMap.get(str.charAt(i));
+            int arabEquivalent = numeralsMap.get(str.charAt(i));
             result += arabEquivalent < Value ? -arabEquivalent : arabEquivalent;
             Value = arabEquivalent;
         }
@@ -53,8 +53,8 @@ public class Main {
     }
 
     private static String toRoman(int number) {
-        String[] symbols = {"C", "L", "X", "IX", "V", "IV", "I"};
-        int[] values = {100, 50, 10, 9, 5, 4, 1};
+        String[] symbols = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] values = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         StringBuilder result = new StringBuilder();
         for (int i = 0; number > 0; i++) {
             while (number >= values[i]) {
@@ -68,7 +68,7 @@ public class Main {
     private static boolean isRoman(String str) {
         if (str.isEmpty()) return false;
         for (char c : str.toCharArray()) {
-            if (!MyMap.containsKey(c)) {
+            if (!numeralsMap.containsKey(c)) {
                 return false;
             }
         }
