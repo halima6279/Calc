@@ -52,7 +52,7 @@ public class Main {
 
     }
 
-    private static int toArab(String str) throws Exception {
+    private static int toArab(String str) {
         int result = 0, Value = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
             int arabEquivalent = numeralsMap.get(str.charAt(i));
@@ -62,7 +62,7 @@ public class Main {
         return result;
     }
 
-    private static String toRoman(int number) throws Exception {
+    private static String toRoman(int number)  {
         String[] symbols = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int[] values = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         StringBuilder result = new StringBuilder();
@@ -75,7 +75,7 @@ public class Main {
         return result.toString();
     }
 
-    private static boolean isRoman(String str) throws Exception {
+    private static boolean isRoman(String str) {
         if (str.isEmpty()) return false;
         for (char c : str.toCharArray()) {
             if (!numeralsMap.containsKey(c)) {

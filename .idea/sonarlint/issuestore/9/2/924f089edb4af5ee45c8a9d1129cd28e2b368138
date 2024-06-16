@@ -1,25 +1,20 @@
 
-r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8¼¾Ÿ˜‚2
-r	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿âĞ¼ûÿÿÿÿ8Á¾Ÿ˜‚2
-J
-java:S5411#"(Use a primitive boolean expression here.(½»³Âûÿÿÿÿ8Ä¾Ÿ˜‚2
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8Ò¾Ÿ˜‚2
-ƒ
-java:S14882"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8Õ¾Ÿ˜‚2
-g	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(‡«õÌøÿÿÿÿ8Ù¾Ÿ˜‚2
-g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(×¸‰Ûúÿÿÿÿ8Ù¾Ÿ˜‚2
-g	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(æ±¢äşÿÿÿÿ8â¾Ÿ˜‚2
-g	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(¹®ÿ’üÿÿÿÿ8â¾Ÿ˜‚2
-L	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8ù¾Ÿ˜‚2
-L	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8ú¾Ÿ˜‚2
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(â­Àøÿÿÿÿ8ı¾Ÿ˜‚2
-F
-java:S1940/")Use the opposite operator ("<=") instead.(¨Ñıˆ8‹¿Ÿ˜‚2
-
-java:S11307"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(æ±¢äşÿÿÿÿ8¿Ÿ˜‚2
-E
-java:S16598"#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8¿Ÿ˜‚2
-
-java:S1130A"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¹®ÿ’üÿÿÿÿ8 ¿Ÿ˜‚2
+˜	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8¼¾Ÿ˜‚2J$9a23229c-ce6e-47c5-8197-184469d4196d
+˜	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿âĞ¼ûÿÿÿÿ8Á¾Ÿ˜‚2J$59795829-41e4-408c-be28-b521affa7d29
+p
+java:S5411#"(Use a primitive boolean expression here.(½»³Âûÿÿÿÿ8Ä¾Ÿ˜‚2J$bc223552-196d-4e54-ba18-6576dfe915d8
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8Ò¾Ÿ˜‚2J$29b0f9c5-7226-44c3-b1d5-5aed80e5c91e
+©
+java:S14882"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8Õ¾Ÿ˜‚2J$b1521bf1-66d5-4e7b-8ba4-34d59528e8ec
+	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(‡«õÌøÿÿÿÿ8Ù¾Ÿ˜‚2J$94ec52e4-9e56-42eb-8a73-084ea4df1328
+	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(×¸‰Ûúÿÿÿÿ8Ù¾Ÿ˜‚2J$782801f2-d0f6-4bbc-8392-5bc072d0c050
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â­Àøÿÿÿÿ8ÄÒÊ˜‚2J$1a40deac-00a9-4d59-a8a9-7eaeaeb0013c
+r	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8ù¾Ÿ˜‚2J$1b421f15-41ec-4824-a2e3-9339fc8f8f80
+r	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8ú¾Ÿ˜‚2J$7b838981-fdda-4c1b-8824-6546b00de7ce
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(â­Àøÿÿÿÿ8ı¾Ÿ˜‚2J$8ce14b56-2a6a-4b7d-9c60-ddec4f5f1ead
+l
+java:S1940/")Use the opposite operator ("<=") instead.(¨Ñıˆ8‹¿Ÿ˜‚2J$2789612b-19e2-4b8d-8036-beebc1a9ac9c
+k
+java:S16598"#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8¿Ÿ˜‚2J$e5475897-bb85-4206-a31c-186d8e2af0f1
