@@ -1,10 +1,14 @@
 
-˜	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8’Èåê2J$0f417094-84bb-4fdf-94d0-354b3e32613c
-¡
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8•Èåê2J$e6b02488-decb-4e6b-a514-41d7056dc713
-©
-java:S1488*"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8—Èåê2J$d8926ed1-9cd9-4830-a569-0860d48446ec
-r	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8¾Ìåê2J$1954f092-7edd-4d99-a39f-3242118bd93a
-r	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8¿Ìåê2J$36e78960-6fb2-404e-8639-aeb8ff90683c
-k
-java:S1659."#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8ÌÚåê2J$25e3c6dc-9ad7-4786-b9f9-c34f2ad2991e
+r	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8ï“ã†‚2
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8ñ“ã†‚2
+ƒ
+java:S1488,"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8ò“ã†‚2
+g	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(´·ºıÿÿÿÿ8ö“ã†‚2
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â­Àøÿÿÿÿ8÷“ã†‚2
+L	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8è•ã†‚2
+L	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8é•ã†‚2
+F
+java:S1940*")Use the opposite operator ("<=") instead.(¨Ñıˆ8õ•ã†‚2
+E
+java:S16590"#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8û•ã†‚2

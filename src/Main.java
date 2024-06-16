@@ -10,15 +10,15 @@ public class Main {
         numeralsMap.put('X', 10);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите выражение через пробел (оба операнда от 1 до 10): ");
         String input = scanner.nextLine().trim();
         System.out.println (calc(input));
     }
-    public static String calc (String input){
+    public static String calc (String input) throws Exception {
 
-        String [] elements = input.split(" ");
+        String[] elements = input.split(" ");
         if (elements.length != 3) {
             throw new IllegalArgumentException("Ошибка! Выражение не соответветсвует условию");
         }
@@ -39,6 +39,8 @@ public class Main {
         }
 
         int result = performOperation(num1, num2, String.valueOf(operator));
+        if (!(result > 0) && !(isArab(String.valueOf(result)))) {
+            throw new Exception("Результат отрицательный");}
         String resultStr = isRoman(firstOperand) || isRoman(secondOperand) ? toRoman(result) : String.valueOf(result);
         return resultStr;
     }
