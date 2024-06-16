@@ -31,8 +31,14 @@ public class Main {
             throw new ArithmeticException("Ошибка! Числа должны быть римские или арабскими в диапазоне 1-10");
         }
 
-        int num1 = isRoman(firstOperand) ? toArab(firstOperand) : Integer.parseInt(firstOperand);
-        int num2 = isRoman(secondOperand) ? toArab(secondOperand) : Integer.parseInt(secondOperand);
+        int num1;
+        int num2;
+        if (isRoman(firstOperand) && checkFourAndNine(firstOperand)){
+            num1 =toArab(firstOperand);
+        } else num1 = Integer.parseInt(firstOperand);
+        if (isRoman(secondOperand) && checkFourAndNine(secondOperand)){
+            num2 = toArab(secondOperand);
+        } else num2 = Integer.parseInt(secondOperand);
 
         if ((!isRoman(firstOperand) && isRoman(secondOperand)) || (isRoman(firstOperand) && !isRoman(secondOperand))) {
             throw new IllegalArgumentException("Ошибка! Оба числа должны быть либо арабскими, либо римскими");
@@ -43,18 +49,19 @@ public class Main {
             throw new Exception("Результат отрицательный");}
         String resultStr = isRoman(firstOperand) || isRoman(secondOperand) ? toRoman(result) : String.valueOf(result);
         return resultStr;
+
     }
-    private static int toArab(String str) {
+    private static int toArab(String str) throws Exception{
         int result = 0, Value = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
             int arabEquivalent = numeralsMap.get(str.charAt(i));
-            result += arabEquivalent < Value ? -arabEquivalent : arabEquivalent;
+            result += (arabEquivalent < Value) ? -arabEquivalent : arabEquivalent;
             Value = arabEquivalent;
         }
         return result;
     }
 
-    private static String toRoman(int number) {
+    private static String toRoman(int number) throws Exception{
         String[] symbols = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int[] values = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         StringBuilder result = new StringBuilder();
@@ -67,13 +74,13 @@ public class Main {
         return result.toString();
     }
 
-    private static boolean isRoman(String str) {
+    private static boolean isRoman(String str) throws Exception {
         if (str.isEmpty()) return false;
         for (char c : str.toCharArray()) {
             if (!numeralsMap.containsKey(c)) {
                 return false;
             }
-        }
+            }
         int value = toArab(str);
         return value >= 1 && value <= 10;
     }
@@ -101,4 +108,14 @@ public class Main {
                 throw new IllegalArgumentException("Неизвестная операция: " + oper);
         }
     }
-}
+
+    public static Boolean checkFourAndNine(String romanNum) throws Exception{
+        if (toArab(romanNum) == 4 && !romanNum.equals("IV")) {
+            throw new Exception("4 по-римски пишется не так");
+        } else if (toArab(romanNum) == 9 && !romanNum.equals("IX")) {
+            throw new Exception("9 по-римски пишется не так");
+        }
+        else return true;
+    }
+    }
+
