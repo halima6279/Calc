@@ -1,27 +1,25 @@
 
-˜	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8ü½—‚2J$13a6a2af-e7a5-4b9c-a7fa-33f6d8a16df2
-k
-java:S5411$"(Use a primitive boolean expression here.(ÌƒÙ‚8Åæ¿—‚2J$ca2026da-1416-4f21-ba38-95ffec39c052
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùáüÿÿÿÿ8¼¾Ÿ˜‚2
+r	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿âĞ¼ûÿÿÿÿ8Á¾Ÿ˜‚2
 J
-java:S5411'"(Use a primitive boolean expression here.(ß¬Ö¿úÿÿÿÿ8 ›À—‚2
-¡
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8ü½—‚2J$2ff6f342-8ed5-44cc-9fb2-3db473526087
-©
-java:S14882"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8’ü½—‚2J$765d6338-6aeb-403f-bb0c-60905e3a9230
-	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(´·ºıÿÿÿÿ8•ü½—‚2J$a8f852e0-eccb-4ebe-aea1-774995e1fcd9
-	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(æ±¢äşÿÿÿÿ8•ü½—‚2J$82c34a62-c757-456b-82ab-4b6c2c3e9272
-	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(¹®ÿ’üÿÿÿÿ8•ü½—‚2J$04d93bff-7ec5-4dd2-ae5c-b4207922ca75
-ˆ	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(ôıœ¬8•ü½—‚2J$2570c710-468c-458a-81c6-66a456baa83b
-ˆ	java:S112t"FDefine and throw a dedicated exception instead of using a generic one.(§®‚Ä8•ü½—‚2J$ac4e72da-ca96-416e-a5e4-b1001d71fb5a
-r	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8¸ü½—‚2J$ad4c08d9-c0db-4487-864f-f2b6be2c9e26
-r	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8¼ü½—‚2J$2d6127ef-ac2c-43d7-8b78-d6332855e8e1
-š
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(â­Àøÿÿÿÿ8Àü½—‚2J$5e667e83-0cb9-4c11-90d2-eb66561d39b6
-l
-java:S19400")Use the opposite operator ("<=") instead.(¨Ñıˆ8Ëü½—‚2J$23830985-965e-4c9c-9c05-57bb179d0f38
-´
-java:S11306"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(æ±¢äşÿÿÿÿ8Ğü½—‚2J$de94a4af-3fd3-41bf-a9b0-d9f052a438db
-k
-java:S16597"#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8Ñü½—‚2J$a7d981be-88e2-4d31-b027-b97f69b138c7
-´
-java:S1130@"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¹®ÿ’üÿÿÿÿ8×ü½—‚2J$be260fcc-a96e-49af-915a-2371c75a4676
+java:S5411#"(Use a primitive boolean expression here.(½»³Âûÿÿÿÿ8Ä¾Ÿ˜‚2
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ƒÂãæüÿÿÿÿ8Ò¾Ÿ˜‚2
+ƒ
+java:S14882"aImmediately return this expression instead of assigning it to the temporary variable "resultStr".(…ÂĞğıÿÿÿÿ8Õ¾Ÿ˜‚2
+g	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(‡«õÌøÿÿÿÿ8Ù¾Ÿ˜‚2
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(×¸‰Ûúÿÿÿÿ8Ù¾Ÿ˜‚2
+g	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(æ±¢äşÿÿÿÿ8â¾Ÿ˜‚2
+g	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(¹®ÿ’üÿÿÿÿ8â¾Ÿ˜‚2
+L	java:S106"+Replace this use of System.out by a logger.(É‚ìîıÿÿÿÿ8ù¾Ÿ˜‚2
+L	java:S106"+Replace this use of System.out by a logger.(åùÇÅÿÿÿÿÿ8ú¾Ÿ˜‚2
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(â­Àøÿÿÿÿ8ı¾Ÿ˜‚2
+F
+java:S1940/")Use the opposite operator ("<=") instead.(¨Ñıˆ8‹¿Ÿ˜‚2
+
+java:S11307"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(æ±¢äşÿÿÿÿ8¿Ÿ˜‚2
+E
+java:S16598"#Declare "Value" on a separate line.(¢Ùáüÿÿÿÿ8¿Ÿ˜‚2
+
+java:S1130A"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¹®ÿ’üÿÿÿÿ8 ¿Ÿ˜‚2

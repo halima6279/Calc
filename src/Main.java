@@ -4,19 +4,21 @@ import java.util.Scanner;
 
 public class Main {
     private static final Map<Character, Integer> numeralsMap = new HashMap<Character, Integer>();
+
     static {
         numeralsMap.put('I', 1);
         numeralsMap.put('V', 5);
         numeralsMap.put('X', 10);
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите выражение через пробел (оба операнда от 1 до 10): ");
         String input = scanner.nextLine().trim();
-        System.out.println (calc(input));
+        System.out.println(calc(input));
     }
-    public static String calc (String input) throws Exception {
+
+    public static String calc(String input) throws Exception {
 
         String[] elements = input.split(" ");
         if (elements.length != 3) {
@@ -30,15 +32,12 @@ public class Main {
         if ((!isRoman(firstOperand) && !isArab(firstOperand)) || (!isRoman(secondOperand) && !isArab(secondOperand))) {
             throw new ArithmeticException("Ошибка! Числа должны быть римские или арабскими в диапазоне 1-10");
         }
+        if (isRoman (firstOperand) && !checkCorrectRoman(firstOperand) || isRoman(secondOperand) && !checkCorrectRoman(secondOperand)){
+            throw new Exception("Неправильно введена римская цифра");
+        }
 
-        int num1;
-        int num2;
-        if (isRoman(firstOperand) && checkFourAndNine(firstOperand)){
-            num1 =toArab(firstOperand);
-        } else num1 = Integer.parseInt(firstOperand);
-        if (isRoman(secondOperand) && checkFourAndNine(secondOperand)){
-            num2 = toArab(secondOperand);
-        } else num2 = Integer.parseInt(secondOperand);
+        int num1 = isRoman(firstOperand)? toArab(firstOperand) : Integer.parseInt(firstOperand);
+        int num2 = isRoman(secondOperand) ? toArab(secondOperand): Integer.parseInt(secondOperand);
 
         if ((!isRoman(firstOperand) && isRoman(secondOperand)) || (isRoman(firstOperand) && !isRoman(secondOperand))) {
             throw new IllegalArgumentException("Ошибка! Оба числа должны быть либо арабскими, либо римскими");
@@ -46,12 +45,14 @@ public class Main {
 
         int result = performOperation(num1, num2, String.valueOf(operator));
         if (!(result > 0) && !(isArab(String.valueOf(result)))) {
-            throw new Exception("Результат отрицательный");}
+            throw new Exception("Результат отрицательный");
+        }
         String resultStr = isRoman(firstOperand) || isRoman(secondOperand) ? toRoman(result) : String.valueOf(result);
         return resultStr;
 
     }
-    private static int toArab(String str) throws Exception{
+
+    private static int toArab(String str) throws Exception {
         int result = 0, Value = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
             int arabEquivalent = numeralsMap.get(str.charAt(i));
@@ -61,7 +62,7 @@ public class Main {
         return result;
     }
 
-    private static String toRoman(int number) throws Exception{
+    private static String toRoman(int number) throws Exception {
         String[] symbols = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
         int[] values = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         StringBuilder result = new StringBuilder();
@@ -80,7 +81,7 @@ public class Main {
             if (!numeralsMap.containsKey(c)) {
                 return false;
             }
-            }
+        }
         int value = toArab(str);
         return value >= 1 && value <= 10;
     }
@@ -109,13 +110,13 @@ public class Main {
         }
     }
 
-    public static Boolean checkFourAndNine(String romanNum) throws Exception{
-        if (toArab(romanNum) == 4 && !romanNum.equals("IV")) {
-            throw new Exception("4 по-римски пишется не так");
-        } else if (toArab(romanNum) == 9 && !romanNum.equals("IX")) {
-            throw new Exception("9 по-римски пишется не так");
-        }
-        else return true;
+    public static Boolean checkCorrectRoman(String romanNum) {
+        String[] Roman = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+        for (int i = 0; i < Roman.length; i++) {
+            if (romanNum.equals(Roman[i])) {
+                return true;
+            }
+        } return false;
     }
-    }
+}
 
